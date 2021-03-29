@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Laravel 8 Auth API - jwt-auth</title>
+    </head>
+
+    <body>
+        <p>https://www.positronx.io/laravel-jwt-authentication-tutorial-user-login-signup-api/</p>
+        <p>Crud Ops using jwt-auth - https://www.avyatech.com/rest-api-with-laravel-8-using-jwt-token/</p>
+        <p>https://www.remotestack.io/build-jwt-authentication-in-laravel/</p>
+        <p>Install and Setup db connection</p>
+        <p>Install & Configure JWT Authentication Package -
+            <ul>
+                <li>composer require tymon/jwt-auth</li>
+                <li>
+                    'providers' => [
+                    ....
+                    ....
+                    Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+                    ],
+                </li>
+                <li>
+                    'aliases' => [
+                    ....
+                    'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+                    'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+                    ....
+                    ],
+                </li>
+                <li>php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"</li>
+                <li>
+                    php artisan jwt:secret
+                </li>
+                <li>Set Up User Model - refer jwt-auth package docs</li>
+                <li>
+                    Configure Auth guard
+                </li>
+                <li>
+                    <p>Method Endpoint</p>
+                    <ul>
+                        <li>POST /api/auth/register</li>
+                        <li>POST /api/auth/login</li>
+                        <li>GET /api/auth/user-profile</li>
+                        <li>POST /api/auth/refresh</li>
+                        <li>POST /api/auth/logout</li>
+                    </ul>
+                </li>
+            </ul>
+
+
+
+
+
+
+
+
+
+
+
+        </p>
+    </body>
+
+</html>
